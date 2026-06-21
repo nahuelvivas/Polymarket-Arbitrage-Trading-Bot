@@ -1,0 +1,242 @@
+Strategy Story.
+
+Imagine a trader named Alex sitting in front of two screens.
+
+One screen shows **Polymarket**.
+
+The other shows **real-time Chainlink prices** for BTC and ETH.
+
+Every 5 minutes, a new game begins.
+
+---
+
+### The Game Starts
+
+At exactly 12:00:00, Polymarket creates a market:
+
+> "Will Bitcoin be above $100,000 at 12:05?"
+
+The starting price ($100,000) becomes the **strike price**.
+
+Alex's bot writes it down and then waits.
+
+It doesn't rush in.
+
+It doesn't care what happens during the first few minutes.
+
+It just watches.
+
+---
+
+### Minute 1, 2, 3...
+
+Bitcoin moves around.
+
+$100,010.
+
+$99,980.
+
+$100,040.
+
+Nothing interesting yet.
+
+The bot keeps watching.
+
+It knows there is still plenty of time for the market to change direction.
+
+A trade now would be gambling.
+
+---
+
+### Final 40 Seconds
+
+Now things get interesting.
+
+The bot looks at Bitcoin.
+
+Strike price: **$100,000**
+
+Current price: **$100,085**
+
+Bitcoin is clearly above the line.
+
+But the bot doesn't trust Bitcoin alone.
+
+It turns to Ethereum.
+
+---
+
+### The Confirmation
+
+Ethereum's strike was:
+
+$3,000
+
+Current price:
+
+$3,008
+
+Ethereum is also above its strike.
+
+The bot smiles.
+
+Both friends are walking in the same direction.
+
+BTC says "UP."
+
+ETH says "UP."
+
+That is stronger than one asset moving alone.
+
+---
+
+### Looking Into The Crowd
+
+Now the bot looks at the Polymarket order book.
+
+It wants to see if traders are behaving normally.
+
+Questions:
+
+* Is there enough liquidity?
+* Are spreads tight?
+* Are buyers and sellers active?
+* Is the YES side healthy?
+
+Everything looks good.
+
+---
+
+### The Double Check
+
+The bot doesn't jump immediately.
+
+It waits for another market tick.
+
+A fraction of a second later:
+
+BTC still above strike.
+
+ETH still above strike.
+
+Books still healthy.
+
+Signal confirmed twice.
+
+Now the bot acts.
+
+---
+
+### The Purchase
+
+With 25 seconds left before expiry, the bot buys:
+
+> YES
+
+at around 0.99.
+
+Many people would ask:
+
+> "Why buy at 0.99? There's almost no profit!"
+
+Because the bot isn't looking for a jackpot.
+
+It's looking for something that is *almost already decided*.
+
+The bot is basically saying:
+
+> "I'm paying 99 cents because I think there's a very good chance this will become worth 100 cents in a few seconds."
+
+Tiny profit.
+
+High probability.
+
+---
+
+### Disaster Check
+
+Immediately after buying, the bot becomes paranoid.
+
+It asks itself:
+
+> "What if I'm wrong?"
+
+Every fraction of a second it checks:
+
+* Did the bid collapse?
+* Did liquidity disappear?
+* Is something strange happening?
+
+If danger appears, it exits.
+
+No emotions.
+
+No hope.
+
+No praying.
+
+Just sell.
+
+---
+
+### The Clock Runs Down
+
+15 seconds left.
+
+10 seconds left.
+
+5 seconds left.
+
+Bitcoin remains above strike.
+
+Ethereum remains above strike.
+
+No crash.
+
+No surprise reversal.
+
+---
+
+### The Finish Line
+
+The epoch ends.
+
+Bitcoin closes at:
+
+$100,078
+
+Above strike.
+
+YES wins.
+
+The position settles successfully.
+
+The bot records a small profit.
+
+Not a huge one.
+
+Just a tiny gain.
+
+Then it forgets everything and prepares for the next 5-minute game.
+
+---
+
+### The Bot's Philosophy
+
+Most traders try to predict the future.
+
+This bot does something different.
+
+It waits until the future is almost here.
+
+Instead of asking:
+
+> "Where will Bitcoin be in 5 minutes?"
+
+it asks:
+
+> "There are only a few seconds left. Is the answer already obvious?"
+
+If BTC and ETH both agree, and the order books agree, and the market still offers a trade, the bot steps in for a few seconds and tries to collect a tiny edge.
+
+Then it leaves before the next battle begins.
