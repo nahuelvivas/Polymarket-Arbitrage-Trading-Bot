@@ -1,7 +1,15 @@
-# Polymarket BTC ETH 5min bot
+# Polymarket Arbitrage Trading Bot
+
+This Polymarket arbitrage trading bot is designed for high-frequency execution during the final seconds of each 5-minute BTC and ETH prediction market epoch. The bot continuously monitors price differences between Chainlink oracle pricing and Polymarket market prices to identify short-term arbitrage and trading opportunities.
+
+Rather than relying on a single market signal, the bot requires confirmation from both BTC and ETH before opening a position. This dual-market confirmation helps reduce false signals and improves trade quality during highly volatile market conditions.
+
+Before executing a trade, the bot evaluates several risk filters, including market liquidity, bid-ask spread, repeated price confirmation, and execution conditions. When all requirements are satisfied, the bot automatically enters either a YES or NO position with low-latency execution.
+
+The strategy focuses on rapid trade management instead of holding positions. After entry, the bot exits quickly using strict risk controls such as time-based exits, volatility protection, and emergency crash detection to minimize exposure before the next trading epoch begins.
 
 
-This bot is a very short-term scalping system that trades only in the final seconds of a 5-minute Polymarket BTC/ETH epoch. It looks for strong divergence between Chainlink strike pricing and Polymarket spot, but only acts when both BTC and ETH agree on direction to confirm the signal. If conditions like tight spreads, sufficient liquidity, and repeated confirmation over a couple of ticks are met, it enters a quick YES or NO position. After entry, it exits almost immediately using tight risk controls, mainly a short time-stop and crash protection, and then waits for the next epoch.
+<img width="1536" height="1024" alt="6201993798779343179" src="https://github.com/user-attachments/assets/5041ecfa-90e0-48ac-be9e-71cb10a9372d" />
 
 
 Polymarket **CLOB V2** bot for BTC and ETH **5-minute** Up/Down epoch markets. See [V2_MIGRATION.md](V2_MIGRATION.md).
