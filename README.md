@@ -347,6 +347,10 @@ print('redeem:', c.liquidity_maker.redeem_enabled)
 <img width="805" height="784" alt="6160965350590191189" src="https://github.com/user-attachments/assets/102bee3c-5d38-47fd-814d-0a989c1846c8" />
 
 
+## Keywords
+
+polymarket arbitrage bot, polymarket trading bot, polymarket bot github, prediction market arbitrage, arbitrage, trading, arbitrage bot, opensource, python, arbitrage bot, prediction market
+
 
 ## 👤 Operator / Contact
 
